@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -6,6 +6,58 @@
 <meta name="theme-color" content="#f5f8fd">
 <meta name="description" content="Professional semiconductor process engineering portfolio of Nurul Wahida Abdullah.">
 <title>Nurul Wahida Abdullah | Process Engineer</title>
+
+
+/* Compact section spacing */
+section {
+  padding: 36px 0;
+}
+
+.hero {
+  padding: 48px 0;
+}
+
+h2 {
+  margin-bottom: 18px;
+}
+
+.card {
+  margin-bottom: 12px;
+  padding: 20px;
+}
+
+.grid {
+  gap: 12px;
+}
+
+.card p:last-child,
+.card ul:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 720px) {
+  section {
+    padding: 26px 0;
+  }
+
+  .hero {
+    padding: 35px 0;
+  }
+
+  .card {
+    padding: 16px;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    margin-bottom: 14px;
+  }
+
+  .grid {
+    gap: 10px;
+  }
+}
+
 
 <style>
 :root{
@@ -260,6 +312,58 @@ img{max-width:100%}
 @media(prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
 }
+
+
+/* Compact section spacing */
+section {
+  padding: 36px 0;
+}
+
+.hero {
+  padding: 48px 0;
+}
+
+h2 {
+  margin-bottom: 18px;
+}
+
+.card {
+  margin-bottom: 12px;
+  padding: 20px;
+}
+
+.grid {
+  gap: 12px;
+}
+
+.card p:last-child,
+.card ul:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 720px) {
+  section {
+    padding: 26px 0;
+  }
+
+  .hero {
+    padding: 35px 0;
+  }
+
+  .card {
+    padding: 16px;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    margin-bottom: 14px;
+  }
+
+  .grid {
+    gap: 10px;
+  }
+}
+
 </style>
 </head>
 
