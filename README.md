@@ -1,296 +1,685 @@
-# wahidaabdullah.github.io
-Exploring engineering, innovation, and continuous improvement through my professional journey!
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Engineering portfolio of Nurul Wahida Abdullah, specializing in semiconductor process engineering, wafer dicing and manufacturing improvement.">
-<title>Nurul Wahida Abdullah | Semiconductor Process Engineer</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f5f8fd">
+<meta name="description" content="Professional semiconductor process engineering portfolio of Nurul Wahida Abdullah.">
+<title>Nurul Wahida Abdullah | Process Engineer</title>
+
 <style>
-:root {
-  --bg: #081321;
-  --card: #102033;
-  --text: #eef5ff;
-  --muted: #a4b7c9;
-  --accent: #56d7df;
-  --line: #294054;
+:root{
+  --bg:#f5f8fd;
+  --white:#fff;
+  --blue:#2456a6;
+  --darkblue:#173e7c;
+  --ink:#152946;
+  --muted:#52647d;
+  --border:#d8e3f0;
+  --pale:#eef4fc;
 }
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-body {
-  margin: 0;
-  background: var(--bg);
-  color: var(--text);
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.7;
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+  line-height:1.65;
+  overflow-x:hidden;
 }
-a { color: inherit; text-decoration: none; }
-.container { max-width: 1080px; margin: auto; padding: 0 24px; }
-nav {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  background: rgba(8,19,33,.97);
-  border-bottom: 1px solid var(--line);
+.wrap{
+  width:calc(100% - 36px);
+  max-width:1060px;
+  margin:auto;
+  min-width:0;
 }
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 16px;
-  padding-top: 18px;
-  padding-bottom: 18px;
+a{color:var(--blue)}
+header{
+  position:sticky;
+  top:0;
+  z-index:100;
+  background:#fffffffa;
+  border-bottom:1px solid var(--border);
 }
-.logo { font-weight: bold; letter-spacing: 1px; color: var(--accent); }
-.links { display: flex; flex-wrap: wrap; gap: 18px; font-size: 14px; }
-.links a:hover, .contact a:hover { color: var(--accent); }
-.hero {
-  min-height: 72vh;
-  display: flex;
-  align-items: center;
-  padding-top: 85px;
-  padding-bottom: 90px;
+nav{
+  display:flex;
+  justify-content:flex-end;
+  align-items:center;
+  min-height:64px;
+  flex-wrap:wrap;
 }
-.eyebrow { color: var(--accent); font-weight: bold; letter-spacing: 2px; font-size: 13px; }
-h1 { font-size: clamp(38px, 7vw, 72px); line-height: 1.12; margin: 18px 0; }
-h2 { font-size: 30px; margin: 0 0 26px; }
-h3 { margin: 0 0 8px; font-size: 20px; }
-p { color: var(--muted); }
-.hero p { font-size: 19px; max-width: 730px; }
-.accent { color: var(--accent); }
-.btn {
-  display: inline-block;
-  padding: 13px 22px;
-  border: 1px solid var(--accent);
-  border-radius: 8px;
-  margin: 14px 10px 0 0;
-  color: var(--accent);
-  font-weight: bold;
+.navlinks{display:flex;gap:21px}
+.navlinks a{
+  text-decoration:none;
+  color:var(--blue);
+  font-weight:600;
+  font-size:13px;
 }
-.btn.primary { background: var(--accent); color: #081321; }
-.btn:hover { opacity: .85; }
-section { padding: 75px 0; border-top: 1px solid var(--line); }
-.grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
-.card {
-  background: var(--card);
-  border: 1px solid var(--line);
-  border-radius: 14px;
-  padding: 26px;
+.menu{
+  display:none;
+  background:white;
+  color:var(--blue);
+  border:1px solid var(--border);
+  border-radius:8px;
+  padding:10px 14px;
+  cursor:pointer;
 }
-.meta { font-size: 14px; color: var(--accent); margin-bottom: 12px; }
-.tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
-.tag {
-  border: 1px solid var(--line);
-  border-radius: 6px;
-  padding: 7px 12px;
-  color: #d9ebf5;
-  font-size: 13px;
+.hero{padding:90px 0}
+.eyebrow{
+  color:var(--blue);
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
 }
-ul { color: var(--muted); padding-left: 20px; }
-li { margin: 9px 0; }
-.contact a { color: var(--accent); overflow-wrap: anywhere; }
-footer { text-align: center; padding: 30px 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; }
-@media(max-width: 650px) {
-  .navbar { align-items: flex-start; flex-direction: column; }
-  .links { gap: 12px; font-size: 13px; }
-  .grid { grid-template-columns: 1fr; }
-  section { padding: 55px 0; }
-  .hero { min-height: 65vh; }
+h1{
+  font-size:clamp(36px,7vw,72px);
+  color:var(--blue);
+  line-height:1.12;
+  letter-spacing:-1.5px;
+  margin:18px 0;
+}
+h2{
+  color:var(--blue);
+  font-size:clamp(25px,4vw,32px);
+  margin:0 0 25px;
+}
+h3{
+  color:var(--blue);
+  font-size:19px;
+  margin:0 0 8px;
+}
+p,li{color:var(--muted)}
+.lead{font-size:18px;max-width:760px}
+section{
+  padding:65px 0;
+  border-top:1px solid var(--border);
+}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:16px;
+}
+.card{
+  background:var(--white);
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:24px;
+  margin-bottom:16px;
+  min-width:0;
+  box-shadow:0 5px 20px #2456a608;
+}
+.grid .card{margin-bottom:0}
+.date{
+  font-size:12px;
+  color:var(--blue);
+  font-weight:700;
+  margin-bottom:12px;
+}
+.actions{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-top:28px;
+}
+.btn{
+  display:inline-block;
+  padding:12px 20px;
+  border:1px solid var(--blue);
+  border-radius:8px;
+  color:var(--blue);
+  background:white;
+  font-weight:700;
+  font-size:14px;
+  text-decoration:none;
+  text-align:center;
+}
+.btn.primary{background:var(--blue);color:white}
+.btn:hover{filter:brightness(.94)}
+.company{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  margin-bottom:16px;
+}
+.company-info{min-width:0}
+.company-info h3{margin:0}
+.company-info p{margin:3px 0}
+.logo{
+  width:78px;
+  height:60px;
+  flex-shrink:0;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:white;
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:8px;
+}
+.logo img{
+  max-width:100%;
+  max-height:100%;
+  object-fit:contain;
+}
+.logo.guh{
+  font-size:23px;
+  font-weight:800;
+  color:var(--blue);
+}
+ul{padding-left:20px}
+li{margin:8px 0}
+strong{color:var(--ink)}
+.metric{
+  font-size:33px;
+  font-weight:800;
+  color:var(--blue);
+  line-height:1.2;
+}
+.tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-top:15px;
+}
+.tag{
+  background:var(--pale);
+  color:var(--darkblue);
+  border:1px solid var(--border);
+  border-radius:7px;
+  padding:6px 10px;
+  font-size:12px;
+}
+details{
+  margin-top:18px;
+  padding-top:15px;
+  border-top:1px solid var(--border);
+}
+summary{
+  color:var(--blue);
+  font-weight:700;
+  cursor:pointer;
+  padding:8px 0;
+}
+.education-details{margin-top:12px}
+.education-details h4{
+  margin:20px 0 5px;
+  color:var(--ink);
+}
+.contact-links{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:20px;
+}
+.contact-links a{
+  display:inline-block;
+  border:1px solid var(--blue);
+  border-radius:8px;
+  padding:10px 18px;
+  text-decoration:none;
+  font-weight:700;
+}
+footer{
+  text-align:center;
+  color:var(--muted);
+  padding:30px 15px;
+  border-top:1px solid var(--border);
+  font-size:13px;
+}
+p,li,h1,h2,h3,h4,a,.tag{overflow-wrap:anywhere}
+img{max-width:100%}
+@media(max-width:720px){
+  .wrap{width:calc(100% - 30px)}
+  .menu{display:block;margin-left:auto}
+  .navlinks{
+    display:none;
+    width:100%;
+    flex-direction:column;
+    gap:4px;
+    padding-bottom:15px;
+  }
+  .navlinks.open{display:flex}
+  .navlinks a{
+    background:var(--pale);
+    padding:11px;
+    border-radius:8px;
+  }
+  .hero{padding:55px 0}
+  h1{font-size:clamp(32px,9vw,48px)}
+  .lead{font-size:16px}
+  section{padding:45px 0}
+  .grid{grid-template-columns:minmax(0,1fr)}
+  .card{padding:18px}
+  .actions{flex-direction:column}
+  .btn{width:100%}
+  .logo{width:62px;height:52px}
+  .company{align-items:flex-start}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
 }
 </style>
 </head>
 
 <body>
-
-<nav>
-  <div class="container navbar">
-    <a class="logo" href="#home">NWA.</a>
-    <div class="links">
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#expertise">Expertise</a>
-      <a href="#highlights">Highlights</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </div>
+<header>
+<nav class="wrap" aria-label="Main navigation">
+<button class="menu" id="menuBtn" type="button"
+aria-controls="navLinks" aria-expanded="false">
+☰ Menu
+</button>
+<div class="navlinks" id="navLinks">
+<a href="#about">About</a>
+<a href="#experience">Experience</a>
+<a href="#projects">Projects</a>
+<a href="#skills">Skills</a>
+<a href="#education">Education</a>
+<a href="#contact">Contact</a>
+</div>
 </nav>
-
-<main>
-
-<header id="home" class="container hero">
-  <div>
-    <div class="eyebrow">SEMICONDUCTOR PROCESS ENGINEERING</div>
-    <h1>Nurul Wahida<br><span class="accent">Abdullah.</span></h1>
-    <p>Process Engineer experienced in semiconductor manufacturing, wafer singulation, laser and mechanical dicing, process optimization, and continuous improvement.</p>
-    <a class="btn primary" href="#experience">Explore My Experience</a>
-    <a class="btn" href="#contact">Get in Touch</a>
-  </div>
 </header>
 
+<main>
+<div class="hero wrap" id="home">
+<div class="eyebrow">Semiconductor Process Engineering</div>
+<h1>Nurul Wahida<br>Abdullah.</h1>
+<p class="lead">
+Semiconductor Process Engineer with 4+ years of experience
+in wafer fabrication, process qualification and manufacturing
+quality. Experienced in SiC, GaN and Si wafer processing,
+with a strong track record in process optimisation,
+equipment qualification and customer complaint resolution.
+</p>
+<div class="actions">
+<a class="btn primary" href="#projects">Explore Key Projects</a>
+<a class="btn" href="#experience">Professional Experience</a>
+</div>
+</div>
+
 <section id="about">
-  <div class="container">
-    <h2>About <span class="accent">Me</span></h2>
-    <p>
-      I am an engineer with hands-on experience in semiconductor manufacturing,
-      specializing in wafer preparation, singulation, and back-end assembly processes.
-      My work involves sustaining manufacturing operations, troubleshooting complex
-      process issues, improving productivity, and implementing data-driven solutions.
-    </p>
-    <p>
-      I enjoy solving technical challenges, working with cross-functional teams,
-      and translating process data into practical manufacturing improvements.
-      My professional interests include advanced semiconductor manufacturing,
-      process development, equipment optimization, and engineering innovation.
-    </p>
-  </div>
+<div class="wrap">
+<h2>About Me</h2>
+<p>
+My engineering background combines semiconductor process
+engineering, manufacturing quality, equipment optimisation
+and structured problem solving. I enjoy transforming
+complex manufacturing challenges into practical,
+data-driven solutions and collaborating with
+cross-functional teams to improve operational performance.
+</p>
+</div>
 </section>
 
 <section id="experience">
-  <div class="container">
-    <h2>Professional <span class="accent">Experience</span></h2>
+<div class="wrap">
+<h2>Professional Experience</h2>
 
-    <div class="card">
-      <div class="meta">SEP 2025 – AUG 2026</div>
-      <h3>Senior Process Engineer — Dicing</h3>
-      <p>Infineon Technologies | Kulim, Malaysia</p>
-      <ul>
-        <li>Sustained and optimized laser and mechanical dicing processes for wafer singulation.</li>
-        <li>Performed recipe optimization and technical troubleshooting for wafer cutting processes.</li>
-        <li>Supported Taiko wafer ring cutting, process capability analysis, and equipment qualification activities.</li>
-        <li>Applied SPC, APC, MSA, and structured problem-solving approaches to improve process stability.</li>
-        <li>Investigated process defects including chipping, kerf variation, and wafer handling-related issues.</li>
-        <li>Collaborated with equipment, manufacturing, and quality teams on process improvements and change management.</li>
-      </ul>
-    </div>
+<article class="card">
+<div class="date">SEP 2025 – AUG 2026</div>
+<div class="company">
+<div class="logo">
+<img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Infineon-Logo.svg"
+alt="Infineon Technologies logo">
+</div>
+<div class="company-info">
+<h3>Senior Process Engineer</h3>
+<p>Infineon Technologies</p>
+</div>
+</div>
+<ul>
+<li><strong>Yield & Process Improvement:</strong>
+Owned yield performance for mechanical and laser dicing
+across SiC, GaN and Si wafers (6-inch and 8-inch).
+Improved cycle time and defect performance through
+recipe optimisation and Design of Experiments (DOE).</li>
+<li><strong>Tool Qualification & Bring-Up:</strong>
+Led qualification and mass-production release of
+dicing tools, including capability studies, risk
+assessments, FMEA and engineering change documentation.</li>
+<li><strong>Process Control:</strong>
+Monitored Advanced Process Control (APC) charts,
+responded to out-of-control signals and maintained OCAPs.</li>
+<li><strong>Change Management:</strong>
+Led DMAIC-based process improvement projects under
+formal engineering change control.</li>
+<li><strong>Customer Complaint Management:</strong>
+Owned the 8D resolution cycle for ICO/FAR/CAR cases,
+including root cause investigation, corrective action
+implementation and closure.</li>
+</ul>
+</article>
 
-    <div class="card" style="margin-top:20px">
-      <div class="meta">JAN 2023 – SEP 2025</div>
-      <h3>Process Engineer — Pre-Assembly & End-of-Line</h3>
-      <p>Infineon Technologies | Penang, Malaysia</p>
-      <ul>
-        <li>Managed manufacturing processes including backgrinding, wafer sawing, pick-and-place, packing, and visual inspection.</li>
-        <li>Drove process optimization, yield improvement, productivity enhancement, and cost-reduction activities.</li>
-        <li>Performed root-cause analysis and implemented corrective actions for production and customer-related issues.</li>
-        <li>Supported process change management, first-article inspections, and manufacturing readiness activities.</li>
-        <li>Coordinated with cross-functional and international engineering teams.</li>
-        <li>Supported customer and quality management system audits.</li>
-      </ul>
-    </div>
+<article class="card">
+<div class="date">JAN 2023 – SEP 2025</div>
+<div class="company">
+<div class="logo">
+<img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Infineon-Logo.svg"
+alt="Infineon Technologies logo">
+</div>
+<div class="company-info">
+<h3>Process Engineer</h3>
+<p>Infineon Technologies</p>
+</div>
+</div>
+<ul>
+<li><strong>EOL Production Phase-Out:</strong>
+Managed controlled production phase-out,
+including updates to FMEA, Control Plans and
+Business Continuity Plans (BCP).</li>
+<li><strong>Audit Focal Point:</strong>
+Primary contact for TÜV NORD, VDA 6.3, IATF 16949
+and ISO 9001 audits, achieving 100% on-time closure
+of findings with zero repeat non-conformances.</li>
+<li><strong>Second-Source Qualification:</strong>
+Led alternative supplier and material qualification
+through technical evaluation, validation and
+risk assessments.</li>
+<li><strong>Root Cause Analysis:</strong>
+Investigated manufacturing disruptions using
+structured 8D and DMAIC methodologies.</li>
+</ul>
 
-    <div class="card" style="margin-top:20px">
-      <div class="meta">NOV 2021 – JAN 2023</div>
-      <h3>Process Engineer</h3>
-      <p>GUH Circuit Industry | Malaysia</p>
-      <ul>
-        <li>Supported printed circuit board manufacturing processes and daily production engineering activities.</li>
-        <li>Conducted process investigations and supported customer return analysis.</li>
-        <li>Participated in cost-reduction and manufacturing improvement initiatives.</li>
-        <li>Supported manufacturing audits and process compliance activities.</li>
-      </ul>
-    </div>
+<details>
+<summary>Additional Engineering Responsibilities</summary>
+<ul>
+<li>Supported test-tool calibration and measurement system control.</li>
+<li>Performed or supported Gauge R&R (GRR) and MSA stability studies.</li>
+<li>Participated in FSA and production readiness activities.</li>
+<li>Participated in Siemens Opcenter MES functional testing, verifying manufacturing process flows, operator transactions and system usability.</li>
+<li>Contributed as a Quality Day committee member to quality awareness and cross-functional engagement activities.</li>
+</ul>
+</details>
+</article>
 
-  </div>
+<article class="card">
+<div class="date">NOV 2021 – JAN 2023</div>
+<div class="company">
+<div class="logo guh">GUH</div>
+<div class="company-info">
+<h3>Process Engineer</h3>
+<p>GUH Circuit</p>
+</div>
+</div>
+<ul>
+<li><strong>Process Ownership:</strong>
+Managed PCB plating and photolithography processes
+to maintain manufacturing parameters and quality.</li>
+<li><strong>Scrap Reduction:</strong>
+Led scrap-reduction initiatives to improve first-pass
+manufacturing yield and reduce material costs.</li>
+<li><strong>Customer Returns:</strong>
+Investigated returned products and presented
+corrective action plans to senior management.</li>
+<li><strong>Customer Audits:</strong>
+Supported audits and visits involving Sony,
+Mitsubishi, Daikin, Fujitsu and KAGA Electronics.</li>
+</ul>
+</article>
+</div>
 </section>
 
-<section id="expertise">
-  <div class="container">
-    <h2>Technical <span class="accent">Expertise</span></h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Semiconductor Processes</h3>
-        <div class="tags">
-          <span class="tag">Laser Dicing</span>
-          <span class="tag">Mechanical Dicing</span>
-          <span class="tag">Wafer Singulation</span>
-          <span class="tag">Taiko Ring Cut</span>
-          <span class="tag">Backgrinding</span>
-          <span class="tag">Wafer Sawing</span>
-          <span class="tag">Pick & Place</span>
-        </div>
-      </div>
-      <div class="card">
-        <h3>Process Engineering</h3>
-        <div class="tags">
-          <span class="tag">Recipe Optimization</span>
-          <span class="tag">Process Troubleshooting</span>
-          <span class="tag">Equipment Qualification</span>
-          <span class="tag">Process Change Management</span>
-          <span class="tag">Yield Improvement</span>
-        </div>
-      </div>
-      <div class="card">
-        <h3>Data & Quality Methods</h3>
-        <div class="tags">
-          <span class="tag">SPC</span>
-          <span class="tag">APC</span>
-          <span class="tag">MSA</span>
-          <span class="tag">Six Sigma</span>
-          <span class="tag">DMAIC</span>
-          <span class="tag">PDCA</span>
-          <span class="tag">Root Cause Analysis</span>
-        </div>
-      </div>
-      <div class="card">
-        <h3>Engineering Collaboration</h3>
-        <div class="tags">
-          <span class="tag">Cross-functional Projects</span>
-          <span class="tag">Customer Complaint Investigation</span>
-          <span class="tag">Technical Reporting</span>
-          <span class="tag">Manufacturing Audits</span>
-          <span class="tag">Continuous Improvement</span>
-        </div>
-      </div>
-    </div>
-  </div>
+<section id="projects">
+<div class="wrap">
+<h2>Key Engineering Projects</h2>
+<div class="grid">
+
+<article class="card">
+<div class="metric">+150%</div>
+<p>Units per hour | 72% less manual dependency</p>
+<h3>Die Sorter Productivity Improvement</h3>
+<p>
+Improved automated die pick-and-place efficiency for
+chip tray output. Co-authored a technical paper presented
+at the Asia Pacific Technical Symposium (APTS).
+</p>
+</article>
+
+<article class="card">
+<div class="metric">−77%</div>
+<h3>Nitrogen Consumption Optimisation</h3>
+<p>Reduced piped nitrogen consumption through
+cross-functional process efficiency improvements.</p>
+</article>
+
+<article class="card">
+<div class="metric">−80%</div>
+<h3>Chemical Cost Optimisation</h3>
+<p>Reduced pre-treatment chemical costs through
+formulation optimisation and stabiliser implementation.</p>
+</article>
+
+<article class="card">
+<h3>Taiko Ring Cut Recipe Optimisation</h3>
+<p>Optimised dicing parameters to improve ring separation
+and eliminate hairline crack defects.</p>
+</article>
+
+<article class="card">
+<h3>SiC / GaN / Si Dicer Tool Release</h3>
+<p>Coordinated qualification, capability studies and
+engineering change documentation for mass-production release.</p>
+</article>
+
+<article class="card">
+<h3>Surftape Specification Change Qualification</h3>
+<p>Qualified material specification changes through
+DOE, FMEA updates and risk assessments.</p>
+</article>
+
+</div>
+</div>
 </section>
 
-<section id="highlights">
-  <div class="container">
-    <h2>Engineering <span class="accent">Highlights</span></h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Wafer Singulation Optimization</h3>
-        <p>Supported process development, optimization, and troubleshooting for laser and mechanical wafer dicing applications.</p>
-      </div>
-      <div class="card">
-        <h3>Manufacturing Improvement</h3>
-        <p>Contributed to productivity, cost-reduction, and process stability initiatives across semiconductor manufacturing operations.</p>
-      </div>
-      <div class="card">
-        <h3>Structured Problem Solving</h3>
-        <p>Applied engineering analysis and systematic root-cause investigation to resolve manufacturing process deviations.</p>
-      </div>
-      <div class="card">
-        <h3>Cross-Regional Collaboration</h3>
-        <p>Worked with engineering stakeholders across manufacturing sites and international technical teams to support operational improvements.</p>
-      </div>
-    </div>
-  </div>
+<section id="skills">
+<div class="wrap">
+<h2>Technical Expertise</h2>
+<div class="grid">
+
+<div class="card">
+<h3>Semiconductor Processes</h3>
+<div class="tags">
+<span class="tag">Wafer Backgrinding</span>
+<span class="tag">Mechanical Dicing</span>
+<span class="tag">Laser Dicing</span>
+<span class="tag">Die Pick & Place</span>
+<span class="tag">Bare Die Processing</span>
+<span class="tag">Tape & Reel</span>
+<span class="tag">Chip Tray</span>
+</div>
+</div>
+
+<div class="card">
+<h3>Equipment</h3>
+<div class="tags">
+<span class="tag">DISCO Backgrinder</span>
+<span class="tag">DISCO Dicing / Laser Saw</span>
+<span class="tag">Accretech Dicing Saw</span>
+<span class="tag">ALSI LASER1205</span>
+<span class="tag">DISCO Ultrasonic Dicing</span>
+</div>
+</div>
+
+<div class="card">
+<h3>Engineering Methodologies</h3>
+<div class="tags">
+<span class="tag">FMEA</span>
+<span class="tag">Control Plan</span>
+<span class="tag">OCAP</span>
+<span class="tag">8D</span>
+<span class="tag">DMAIC</span>
+<span class="tag">SPC</span>
+<span class="tag">APC</span>
+<span class="tag">MSA</span>
+<span class="tag">DOE</span>
+</div>
+</div>
+
+<div class="card">
+<h3>Software & Systems</h3>
+<div class="tags">
+<span class="tag">Camstar</span>
+<span class="tag">Siemens Opcenter</span>
+<span class="tag">Fabcockpit</span>
+<span class="tag">Windchill</span>
+<span class="tag">Teamcenter</span>
+<span class="tag">DMS</span>
+<span class="tag">Minitab</span>
+<span class="tag">Power BI</span>
+<span class="tag">Tableau</span>
+<span class="tag">Microsoft 365</span>
+<span class="tag">Python (Basic)</span>
+</div>
+</div>
+
+<div class="card">
+<h3>Additional Technical Experience</h3>
+<div class="tags">
+<span class="tag">Test-Tool Calibration</span>
+<span class="tag">Gauge R&R</span>
+<span class="tag">MSA Stability</span>
+<span class="tag">FSA</span>
+<span class="tag">MES Functional Testing</span>
+<span class="tag">Operator Workflow Verification</span>
+<span class="tag">Quality Day Committee</span>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="education">
+<div class="wrap">
+<h2>Education & Academic Highlights</h2>
+<div class="grid">
+
+<article class="card">
+<div class="date">2017 – 2021</div>
+<h3>Bachelor of Engineering (Hons.) in Chemical Engineering</h3>
+<p>Universiti Malaysia Pahang</p>
+
+<details>
+<summary>View Academic Achievements & Activities</summary>
+<div class="education-details">
+
+<h4>Silver Award — CITREX</h4>
+<p>
+Received a Silver Award at the Creation, Innovation,
+Technology and Research Exposition (CITREX) for
+in silico analysis of fructooligosaccharide (FOS)-
+producing enzymes.
+</p>
+
+<h4>IEM Chemical Engineering Design Competition</h4>
+<p>
+Participated in an engineering design competition
+involving the conceptual design of a 10,000 MTA
+ethyl alcohol production plant using ethylene
+as feedstock.
+</p>
+
+<h4>Head of Sponsorship</h4>
+<p>
+Served as Head of Sponsorship for the Mobility
+Education and Volunteerism programme to Vietnam.
+</p>
+
+</div>
+</details>
+</article>
+
+<article class="card">
+<div class="date">2016 – 2017</div>
+<h3>Foundation in Science</h3>
+<p>Universiti Teknologi MARA (UiTM)</p>
+<p>
+Completed a pre-university science programme
+providing foundational knowledge in mathematics
+and core sciences, preparing for undergraduate
+engineering studies.
+</p>
+</article>
+
+</div>
+</div>
+</section>
+
+<section id="recognition">
+<div class="wrap">
+<h2>Certifications & Recognition</h2>
+<div class="grid">
+
+<article class="card">
+<h3>Professional Certifications & Training</h3>
+<ul>
+<li>Six Sigma Green Belt</li>
+<li>DISCO Sawing & Backgrind Operation/Maintenance</li>
+<li>Process FMEA</li>
+<li>8D & T6s Problem Solving</li>
+<li>CHIP Change Management</li>
+<li>Minitab – Statistical Analysis and Data Visualization</li>
+</ul>
+</article>
+
+<article class="card">
+<h3>Awards & Recognition</h3>
+<ul>
+<li>Co-author of a technical paper presented at the Asia Pacific Technical Symposium (APTS).</li>
+<li>Champion, Embracing Infineon SPIRIT in Diversity Competition.</li>
+</ul>
+</article>
+
+</div>
+</div>
 </section>
 
 <section id="contact">
-  <div class="container contact">
-    <h2>Let's <span class="accent">Connect</span></h2>
-    <p>Interested in discussing semiconductor process engineering, manufacturing innovation, or professional opportunities? Feel free to connect with me.</p>
-    <p>
-      GitHub:
-      <a href="https://github.com/wahidaabdullah" target="_blank" rel="noopener noreferrer">github.com/wahidaabdullah</a>
-    </p>
-    <!-- Add your actual LinkedIn profile URL here when ready. -->
-  </div>
+<div class="wrap">
+<h2>Let's Connect</h2>
+<p>
+Interested in semiconductor process engineering,
+manufacturing improvement or technical collaboration?
+Feel free to connect with me.
+</p>
+<div class="contact-links">
+<a href="https://www.linkedin.com/in/wahidaabdullah"
+target="_blank" rel="noopener noreferrer">LinkedIn</a>
+<a href="https://github.com/wahidaabdullah"
+target="_blank" rel="noopener noreferrer">GitHub</a>
+</div>
+</div>
 </section>
 
 </main>
 
 <footer>
-  &copy; <span id="year"></span> Nurul Wahida Abdullah. All rights reserved.
+© <span id="year"></span> Nurul Wahida Abdullah.
+All rights reserved.
 </footer>
 
 <script>
-document.getElementById("year").textContent = new Date().getFullYear();
-</script>
+document.getElementById("year").textContent =
+  new Date().getFullYear();
 
+const menu = document.getElementById("menuBtn");
+const links = document.getElementById("navLinks");
+
+menu.addEventListener("click", function(){
+  const open = links.classList.toggle("open");
+  menu.setAttribute("aria-expanded", String(open));
+  menu.textContent = open ? "✕ Close" : "☰ Menu";
+});
+
+links.querySelectorAll("a").forEach(function(link){
+  link.addEventListener("click", function(){
+    links.classList.remove("open");
+    menu.setAttribute("aria-expanded", "false");
+    menu.textContent = "☰ Menu";
+  });
+});
+</script>
 </body>
 </html>
+
