@@ -397,9 +397,16 @@ structured 8D and DMAIC methodologies.</li>
 <div class="date">NOV 2021 – JAN 2023</div>
 <div class="company">
 <div class="logo">
-  <img  src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Guh_company_logo.jpg"
+
+  <img
+
+    src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Guh_company_logo.jpg"
+
     alt="GUH Circuit logo"
+
     loading="lazy">
+
+</div>
 </div
 <div class="company-info">
 <h3>Process Engineer</h3>
