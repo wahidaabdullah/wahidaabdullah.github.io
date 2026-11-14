@@ -402,6 +402,8 @@ structured 8D and DMAIC methodologies.</li>
     alt="GUH Circuit logo"
     loading="lazy"
     onerror="this.style.display='none'; this.parentElement.textContent='GUH';">
+
+</div>
 </div>
 </div
 <div class="company-info">
@@ -653,9 +655,6 @@ Feel free to connect with me.
 <div class="contact-links">
 <a href="https://www.linkedin.com/in/wahidaabdullah"
 target="_blank" rel="noopener noreferrer">LinkedIn</a>
-<a href="https://github.com/wahidaabdullah"
-target="_blank" rel="noopener noreferrer">GitHub</a>
-</div>
 </div>
 </section>
 
